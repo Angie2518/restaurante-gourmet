@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/127348.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    top: 0;
+
+}
+/* apuntamos a la barra de navegacion que esta dentro de header  */
+header nav{
+    background: rgba(5, 5, 5, 0.534);
+    display: flex;
+    /* height: 400px; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+}
+
+header ul a{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: .6s;
+}
+
+header ul a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+
+#hero{
+    /* background-color: rgb(36, 153, 255); */
+    text-align: center;
+    padding: 300px;
+}
+#hero h2{
+    color: yellow;
+    font-size: 60px;
+}
+#hero h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+#hero button{
+    background-color: yellow;
+    color: #999;
+    font-size: 32px;
+    padding: 10px  20px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+main{
+    width: 100%;
+    position: relative;
+    
+}
+
+
+
+
+
+
+#PLATOS{
+    width: 100%;
+    padding: 120px 0 ;
+    text-align: center;
+    background-color: #1a1a1a;
+    
+}
+
+#PLATOS h2{
+    font-size: 60px ;
+    margin-bottom:50px;
+    color: yellow;
+
+}
+#PLATOS p{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#PLATOS .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#PLATOS article{
+    margin: 0 40px;
+    position: relative;
+}
+
+#PLATOS article h3{
+    position: absolute;
+    z-index: 9;
+    top: 100px;
+    width: 100%;
+    text-align: center ;
+    color: yellow;
+}
+
+.piñe{
+    width: 300px;
+    height: 400px;
+}
+
+.camarin{
+    width: 300px;
+    height: 400px;
+}
+
+.salmon{
+    width: 300px;
+    height: 400px;
+}
+
+#PLATOS article h3{
+    position: absolute;
+    z-index: 9;
+    top: 100px;
+    width: 100%;
+    text-align: center ;
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+#FAVORITOS{
+    width: 100%;
+    padding: 100px 0 ;
+    text-align: center;
+    background: url("../img/fondo\ favoritos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#FAVORITOS h2{
+    font-size: 50px ;
+    margin-bottom:30px;
+    color: yellow;
+}
+
+#FAVORITOS .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#FAVORITOS article{
+    margin: 20px 50px;
+    position: relative;
+}
+
+#FAVORITOS article h3{
+    color: #ffffff;
+}
+
+.imgmost{
+    width: 300px;
+    height: 400px;
+}
+
+.Langosta{
+    width: 300px;
+    height: 400px;
+}
+
+.Milanesa{
+    width: 300px;
+    height: 400px;
+}
+
+.Italan{
+    width: 300px;
+    height: 400px;
+}
+
+.Parrillada{
+    width: 300px;
+    height: 400px;
+}
+
+.Tiramisut{
+    width: 300px;
+    height: 400px;
+}
+
+#MENU {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: yellow;
+    font-size: 50px;
+}
+
+
+#MENU .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+    
+
+.menu-item {
+    height: 500px;
+    text-align: center;
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+   
+
+ #MENU .menu-item img {
+    margin: 40px auto;
+    width: 90%;
+    height: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+    border-bottom: 2px solid #444;
+    
+}
+
+
+.menu-item h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffd700;
+    
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 15px;
+ 
+}
+
+.menu-item .price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+}
+
+
+#VINOSYBEBIDAS {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 50px 0; /* Espaciado interno */
+    background: url("../img/Diseño\ sin\ título.png");
+    background-size: cover;
+    /* background-position-x: 600px; */
+}
+
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: yellow;
+    font-size: 36px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#VINOSYBEBIDAS .menu-item {
+    background-color: rgb(75, 75, 75);
+    width: 280px;
+    height: 280px;
+    margin: 15px;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#VINOSYBEBIDAS .menu-item:hover {
+    transform: translateY(-10px);
+}
+
+#VINOSYBEBIDAS .menu-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo{
+    width: 160px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: yellow;
+}
+
+.menu-item p {
+    margin: 10px 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+
+#CONTACTO{
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    background: rgb(155, 155, 155);
+}
+
+#CONTACTO h2{
+    font-size: 50px;
+    color: yellow;
+}
+
+#CONTACTO form{
+    width: 50%;
+    margin: 0 auto;
+
+}
+#CONTACTO p{
+    font-size: 20px;
+}
+#CONTACTO input,
+
+#CONTACTO select{
+    width: 40%;
+    padding: 8px 14px;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+#CONTACTO button{
+    padding: 14px 30px;
+    font-size: 20px;
+    background-color: yellow;
+    color: #000000;
+    border-radius: 8px;
+    margin-top: 60px;
+    border-color: transparent;
+}
+
+footer{
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+
+}
+   
